@@ -16,7 +16,7 @@ export class WordpressProvider {
   }
 
   getPosts() {
-    return this.http.get<{ posts: Post[] }>('https://chiilog.com/wp-json/wp/v2/posts')
+    return this.http.get<Post[]>('https://chiilog.com/wp-json/wp/v2/posts')
   }
 
   getArticle(id: number) {
